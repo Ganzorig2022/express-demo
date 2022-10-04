@@ -25,7 +25,7 @@ exports.createUser = (req, res) => {
       time: '8:00 PM EST',
       description:
         'Dope party which features Hip Hop legends, emerging artists and world-class turntablists',
-      image: '/images/sample/event6.jpg',
+      image: '/images/sample/event7.jpg',
     },
   ]);
 };
@@ -38,4 +38,8 @@ exports.updateUser = (req, res) => {
     ...user,
     name: "Ganzo's kitchen store",
   });
+};
+
+exports.deleteUser = (req, res) => {
+  return res.status(200);
 };
